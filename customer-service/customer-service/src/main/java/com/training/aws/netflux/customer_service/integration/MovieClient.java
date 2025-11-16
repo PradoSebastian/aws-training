@@ -21,7 +21,7 @@ public class MovieClient {
     public List<MovieDTO> getMovies(Genre genre) {
         log.info("Calling GET Movies API with genre: {}", genre);
         List<MovieDTO> list = this.client.get()
-                .uri("api/movies/{genre}", genre)
+                .uri("api/movies/genre/{genre}", genre)
                 .retrieve()
                 .body(new ParameterizedTypeReference<List<MovieDTO>>() {
                 });
