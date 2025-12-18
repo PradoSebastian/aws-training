@@ -12,7 +12,6 @@ import java.util.List;
 public interface CustomerMapper {
 
     @Mapping(source = "movies", target = "recommendedMovies")
-    @Mapping(target = "name", expression = "java(entity.getName().toUpperCase())")
     CustomerDTO mapToDTO(Customer entity, List<MovieDTO> movies);
 
     Customer mapToEntity(CustomerDTO dto);
