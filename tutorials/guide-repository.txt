@@ -1,0 +1,1 @@
+https://github.com/vinsguru/aws-cloud-architect-essentials/blob/main/auto-scale/docker-compose.yaml
